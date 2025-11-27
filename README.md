@@ -51,7 +51,9 @@ I have access to a dataset using [this](https://github.com/new-village/KeibaScra
 - Show Max (23.7, etc)
 - ID (This horse in this race)
 ## Horse
-- CURRENTLY BROKEN
+- Parents (Name & ID)
+- Grandparents (Name & ID)
+- Entry IDs for races
 
 # Goals
 Predict outcomes of horse races using historical data. A program should be able to maximize prediction accuracy based on given information against historical outcomes and attempt to apply that same prediction strategy to as of yet undecided races.
@@ -68,8 +70,11 @@ Predict outcomes of horse races using historical data. A program should be able 
 - The scraping script does impose a load on the actual netkeiba website, which could cause issues when attempting to pull months or years of information at a time. This should be minimized to reduce load on the servers and reduce risk of IP bans.
 
 # Steps to take
-- Fix the keibascraper horse data scraping and add race history.
+- Fix the keibascraper horse data scraping and add race history. (DONE)
 - (Potentially add Jockey data as well)
 - Build a structured dataset that a model can be trained off of.
 - Model training and testing.
 - Find ways to expand the dataset with new race data.
+
+# Notes
+- The scraper now works with horse data, but the data it scrapes from the races is incomplete. This should be fine, but requires that I link the entry data that I pull from races.
